@@ -34,7 +34,7 @@ export const PageBackground = ( {children} ) => {
         <CardFront />
         <CardBackImg />
       </div>
-      <div id={styles.RightPageBackground}> {children} </div>
+      <div id={styles.RightPageBackground}>{children}</div>
     </div>
   );
 };
