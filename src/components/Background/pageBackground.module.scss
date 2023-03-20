@@ -1,6 +1,6 @@
 $width: 25%;
-$imgWidth: 447px;
-$imgHeight: 250px;
+$imgWidth: 400px;
+$imgHeight: 220px;
 
 #BackMain{
     display: flex;
@@ -11,22 +11,36 @@ $imgHeight: 250px;
     #LeftPageBackground{
         background-image: url('/src/assets/bg-main-desktop.png');
         background-size: cover;
-        width: 25%;
+        width: 30%;
         position: relative;
 
-        img{
+        #cardFrontImg{
             height: $imgHeight;
             width: $imgWidth;
             position: absolute;
             right: 0;
             top: 50%;
-            margin-top: calc(($imgHeight / 1) * -1);
-            margin-right: calc(($imgWidth / 2) * -1);
+            margin-top: calc(($imgHeight / 0.9) * -1);
+            margin-right: calc(($imgWidth / 3) * -1);
+            box-shadow: 10px 10px 20px 0 rgba(0,0,0,.178);
+            border-radius: 10px;
+        }
+
+        #cardBackImg{
+            height: $imgHeight;
+            width: $imgWidth;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: 0.9rem;
+            margin-right: calc(($imgWidth / 1.8) * -1);
+            box-shadow: 10px 10px 20px 0 rgba(0,0,0,.178);
+            border-radius: 10px;
         }
     }
 
     #RightPageBackground{
-        width: 75%;
+        width: 70%;
         background-color: var(--white);
      }
 }
