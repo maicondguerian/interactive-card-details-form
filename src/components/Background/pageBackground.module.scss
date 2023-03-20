@@ -1,0 +1,20 @@
+#BackMain{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+
+    #LeftPageBackground{
+        background-image: url('/src/assets/bg-main-desktop.png');
+        background-size: cover;
+        width: 25%;
+    }
+
+    #RightPageBackground{
+        width: 75%;
+        background-color: var(--white);
+      
+     }
+    
+}
+
+
