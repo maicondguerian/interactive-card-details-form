@@ -17,15 +17,13 @@ const CardFront = () => {
           <li>maicondlol</li>
           <li>MM/YY</li>
         </ul>
-      {/* <div className={styles.cardName}>
-    
-      </div> */}
     </div>
   )
 
 }
 const CardBackImg = () => {
   return <div alt="cardFront" id={styles.cardBackImg}>
+    <span>CVC</span>
   </div>
 }
 

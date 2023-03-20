@@ -9,7 +9,6 @@ function App() {
     <MyContext.Provider value={{}}>
       <ContentContainer>
         <PageBackground>
-          
         </PageBackground>
       </ContentContainer>
     </MyContext.Provider>

@@ -1,5 +1,5 @@
 $width: 25%;
-$imgWidth: 400px;
+$imgWidth: 410px;
 $imgHeight: 225px;
 
 #BackMain{
@@ -86,9 +86,21 @@ $imgHeight: 225px;
             top: 50%;
             margin-top: 0.9rem;
             margin-right: calc(($imgWidth / 1.5) * -1);
-            box-shadow: 10px 10px 20px 0 rgba(0,0,0,.178);
             border-radius: 10px;
             background-image: url('../../assets/bg-card-back.png');
+            background-size:cover;
+            background-repeat:no-repeat;
+            box-shadow: 10px 10px 20px 0 rgba(0,0,0,.178);
+            display: flex;
+            justify-content:flex-end;
+
+            span{
+                color: var(--white);
+                font-weight: 500;
+                position: absolute;
+                bottom: 46%;
+                margin-right: 3rem;
+            }
         }
     }
 
