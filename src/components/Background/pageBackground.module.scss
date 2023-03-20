@@ -1,20 +1,34 @@
+$width: 25%;
+$imgWidth: 447px;
+$imgHeight: 250px;
+
 #BackMain{
     display: flex;
     flex-direction: row;
     height: 100vh;
+    width: 100vw;
 
     #LeftPageBackground{
         background-image: url('/src/assets/bg-main-desktop.png');
         background-size: cover;
         width: 25%;
+        position: relative;
+
+        img{
+            height: $imgHeight;
+            width: $imgWidth;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: calc(($imgHeight / 1) * -1);
+            margin-right: calc(($imgWidth / 2) * -1);
+        }
     }
 
     #RightPageBackground{
         width: 75%;
         background-color: var(--white);
-      
      }
-    
 }
 
 
