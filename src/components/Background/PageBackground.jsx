@@ -1,8 +1,28 @@
 import styles from "./pageBackground.module.scss";
 
 const CardFront = () => {
-  return <div alt="cardFront" id={styles.cardFrontImg}>
-  </div>
+  return (
+    <div alt="cardFront" id={styles.cardFrontImg}>
+      <ul id={styles.circleLi}>
+        <li></li>
+        <li></li>
+      </ul>
+      <ul id={styles.cardNumber}>
+        <li>0000</li>
+        <li>0000</li>
+        <li>0000</li>
+        <li>0000</li>
+      </ul>
+      <ul className={styles.cardName}>
+          <li>maicondlol</li>
+          <li>MM/YY</li>
+        </ul>
+      {/* <div className={styles.cardName}>
+    
+      </div> */}
+    </div>
+  )
+
 }
 const CardBackImg = () => {
   return <div alt="cardFront" id={styles.cardBackImg}>

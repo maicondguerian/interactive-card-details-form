@@ -1,53 +1,6 @@
-// $width: 25%;
-// $imgWidth: 400px;
-// $imgHeight: 220px;
-
-// #BackMain{
-//     display: flex;
-//     flex-direction: row;
-//     height: 100vh;
-//     width: 100vw;
-
-//     #LeftPageBackground{
-//         background-image: url('/src/assets/bg-main-desktop.png');
-//         background-size: cover;
-//         width: 30%;
-//         position: relative;
-
-//         #cardFrontImg{
-//             height: $imgHeight;
-//             width: $imgWidth;
-//             position: absolute;
-//             right: 0;
-//             top: 50%;
-//             margin-top: calc(($imgHeight / 0.9) * -1);
-//             margin-right: calc(($imgWidth / 3) * -1);
-//             box-shadow: 10px 10px 20px 0 rgba(0,0,0,.178);
-//             border-radius: 10px;
-//         }
-
-//         #cardBackImg{
-//             height: $imgHeight;
-//             width: $imgWidth;
-//             position: absolute;
-//             right: 0;
-//             top: 50%;
-//             margin-top: 0.9rem;
-//             margin-right: calc(($imgWidth / 1.8) * -1);
-//             box-shadow: 10px 10px 20px 0 rgba(0,0,0,.178);
-//             border-radius: 10px;
-//         }
-//     }
-
-//     #RightPageBackground{
-//         width: 70%;
-//         background-color: var(--white);
-//      }
-// }
-
 $width: 25%;
 $imgWidth: 400px;
-$imgHeight: 220px;
+$imgHeight: 225px;
 
 #BackMain{
     display: flex;
@@ -72,6 +25,57 @@ $imgHeight: 220px;
             box-shadow: 10px 10px 20px 0 rgba(0,0,0,.178);
             border-radius: 10px;
             background-image: url('../../assets/bg-card-front.png');
+            padding: 2rem;
+
+            #circleLi{
+            display: flex;
+            list-style: none;
+            align-items: center;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1em;
+
+            li:first-child{
+                background-color: var(--white);
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+            }
+
+            li:last-child{
+                border: solid 1.4px  var(--white);
+                height: 25px;
+                width: 25px;
+                border-radius: 50%;
+            }
+        }
+        
+            #cardNumber{
+                display: flex;
+                list-style: none;
+                align-items: center;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 0.5em;
+                margin-top: 3.3rem;
+
+                li{
+                    font-size: 26px;
+                    font-weight: 500;
+                    letter-spacing: 0.1em;
+                    color:  var(--white);
+                }
+            }
+
+            .cardName{
+                display: flex;
+                list-style: none;
+                justify-content: space-between;
+                margin-top: 1rem;
+
+                li{
+                    color: var(--white);
+                    text-transform: uppercase;
+                }
+            }
         }
 
         #cardBackImg{
