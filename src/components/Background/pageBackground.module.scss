@@ -1,3 +1,50 @@
+// $width: 25%;
+// $imgWidth: 400px;
+// $imgHeight: 220px;
+
+// #BackMain{
+//     display: flex;
+//     flex-direction: row;
+//     height: 100vh;
+//     width: 100vw;
+
+//     #LeftPageBackground{
+//         background-image: url('/src/assets/bg-main-desktop.png');
+//         background-size: cover;
+//         width: 30%;
+//         position: relative;
+
+//         #cardFrontImg{
+//             height: $imgHeight;
+//             width: $imgWidth;
+//             position: absolute;
+//             right: 0;
+//             top: 50%;
+//             margin-top: calc(($imgHeight / 0.9) * -1);
+//             margin-right: calc(($imgWidth / 3) * -1);
+//             box-shadow: 10px 10px 20px 0 rgba(0,0,0,.178);
+//             border-radius: 10px;
+//         }
+
+//         #cardBackImg{
+//             height: $imgHeight;
+//             width: $imgWidth;
+//             position: absolute;
+//             right: 0;
+//             top: 50%;
+//             margin-top: 0.9rem;
+//             margin-right: calc(($imgWidth / 1.8) * -1);
+//             box-shadow: 10px 10px 20px 0 rgba(0,0,0,.178);
+//             border-radius: 10px;
+//         }
+//     }
+
+//     #RightPageBackground{
+//         width: 70%;
+//         background-color: var(--white);
+//      }
+// }
+
 $width: 25%;
 $imgWidth: 400px;
 $imgHeight: 220px;
@@ -21,9 +68,10 @@ $imgHeight: 220px;
             right: 0;
             top: 50%;
             margin-top: calc(($imgHeight / 0.9) * -1);
-            margin-right: calc(($imgWidth / 3) * -1);
+            margin-right: calc(($imgWidth / 2) * -1);
             box-shadow: 10px 10px 20px 0 rgba(0,0,0,.178);
             border-radius: 10px;
+            background-image: url('../../assets/bg-card-front.png');
         }
 
         #cardBackImg{
@@ -33,9 +81,10 @@ $imgHeight: 220px;
             right: 0;
             top: 50%;
             margin-top: 0.9rem;
-            margin-right: calc(($imgWidth / 1.8) * -1);
+            margin-right: calc(($imgWidth / 1.5) * -1);
             box-shadow: 10px 10px 20px 0 rgba(0,0,0,.178);
             border-radius: 10px;
+            background-image: url('../../assets/bg-card-back.png');
         }
     }
 
