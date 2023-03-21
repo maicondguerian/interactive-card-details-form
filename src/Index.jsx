@@ -28,20 +28,29 @@ function App() {
 
   const handleMonth = (evento) => {
     const value = evento.target.value
-    formattedValue = value.replace(/\D/g, '')
-    
-    setMonth(evento.target.value)
+    const formattedValue = value.replace(/\D/g, '')
+    if (formattedValue.length > 2) {
+      setMonth(formattedValue.slice(0, 2))
+    } else {
+      setMonth(evento.target.value)
+    }
   }
 
   const handleYear = (evento) => {
-    setYear(evento.target.value)
+    const value = evento.target.value
+    const formattedValue = value.replace(/\D/g, '')
+    if (formattedValue.length > 2) {
+      setYear(formattedValue.slice(0, 2))
+    } else {
+      setYear(formattedValue)
+    }
   }
 
   const handleCvc = (evento) => {
     const value = evento.target.value
     const formattedValue = value.replace(/\D/g, '')
     if (formattedValue.length > 2) {
-      setCvc(value.slice(0,3))
+      setCvc(value.slice(0, 3))
     } else {
     setCvc(value)
     }
