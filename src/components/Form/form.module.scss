@@ -1,9 +1,57 @@
-.formWrapper{
+.formWrapper {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
 
-    ul:last-child{
-        display: flex;
-        list-style: none;
+    .form {
+        width: 400px;
+
+        label {
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 2px;
+            font-size: 15px;
+            color: #000c;
+        }
+
+        #ul {
+            margin-bottom: 1rem;
+        }
+
+        input {
+            width: 100%;
+            height: 40px;
+            border-radius: 5px;
+            border: solid 1px #ccc;
+            background-color: transparent;
+            outline: none;
+            font-size: 18px;
+            font-weight: 500;
+            color: #686868c0;
+            margin: 1rem 0;
+        }
+
+
+        ul {
+            list-style: none;
+        }
+
+        ul:last-child {
+            display: flex;
+
+        }
+
+        button {
+            background-image: url('/src/assets/bg-main-mobile.png');
+            width: 100%;
+            height: 50px;
+            border-radius: 10px;
+            border: none;
+            font-size: 18px;
+            font-family: 600;
+            color: var(--whitebg);
+        }
     }
-}   
+}
