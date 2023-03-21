@@ -4,35 +4,30 @@ export const Form = () => {
     return (
 
         <div className={styles.formWrapper}>
-            <div className={styles.form}>
-                <ul id={styles.ul}>
-                    <li>
-                        <p><label for="name">cardholder name</label></p>
-                        <span>
-                            <input type="text" id='name'  />
-                        </span>
-                    </li>
-                    <li>
-                        <p><label for="number">card number</label></p>
-                        <span>
-                            <input type="text" id='number' />
-                        </span>
-                    </li>
-                </ul>
-                <span>EXP. DATE (MM/YY)</span>
-                <div>
-                    <ul className={styles.secondUl}>
-                        <li><input type="text" name="" id="month" /></li>
-                        <li><input type="text" name="" id="" /></li>
-                        <li><input type="text" name="" id="" /></li>
-                    </ul>
-                </div>
-            <button>Confirm</button>
-            </div>
+            <form className={styles.form}>
+                <fieldset id={styles.nomeNumero}>
+                        <label for="name">cardholder name</label>
+                        <input type="text" id='name' required pattern='/[a-z]/gi' placeholder='e.g. Jane Applessed' />
+                        <label for="number">card number</label>
+                        <input type="text" id='number' required pattern='/[0-9]{12}/g' placeholder='e.g. 1234 5678 9123 0000'/>
+                </fieldset>
+                <fieldset className={styles.dateCvc}>
+                    <div className={styles.data}>
+                        <label htmlFor="month year">exp.date (mm/yy)</label>
+                        <div className={styles.dataDado}>
+                            <input type="text" name="" id="month" required pattern='' placeholder='MM'/>
+                            <input type="text" name="" id="year" required pattern='' placeholder='YY'/>
+                        </div>
+                    </div>
+                    <div className={styles.cvc}>
+                        <label htmlFor="cvc">cvc</label>
+                        <input type="text" name="" id="cvc" required pattern='' placeholder='e.g. 123'/>
+                    </div>
+                
+                </fieldset>
+            <button type='submit'>Confirm</button>
+            </form>
         </div>
-
-
-
     )
 
 }

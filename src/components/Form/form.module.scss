@@ -8,6 +8,11 @@
 
     .form {
         width: 400px;
+        border: none;
+
+        fieldset {
+            border: none;
+        }
 
         label {
             text-transform: uppercase;
@@ -32,16 +37,27 @@
             font-weight: 500;
             color: #686868c0;
             margin: 1rem 0;
+            padding: 1rem;
         }
 
+        .dateCvc {
 
-        ul {
-            list-style: none;
-        }
-
-        ul:last-child {
             display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-bottom: 1.5rem;
 
+            .data {
+            width: 100%;
+                
+                .dataDado {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    padding-right: 1rem;
+                    gap: 1rem;
+                }
+            }
         }
 
         button {
