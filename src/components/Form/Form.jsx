@@ -9,7 +9,7 @@ export const Form = () => {
                     <li>
                         <p><label for="name">cardholder name</label></p>
                         <span>
-                            <input type="text" id='name' />
+                            <input type="text" id='name'  />
                         </span>
                     </li>
                     <li>
