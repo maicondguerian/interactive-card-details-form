@@ -1,6 +1,9 @@
+import { useContext } from "react";
+import { MyContext } from "../../contexts/MyContext";
 import styles from "./pageBackground.module.scss";
 
 const CardFront = () => {
+  const { user, number } = useContext(MyContext)
   return (
     <div alt="cardFront" id={styles.cardFrontImg}>
       <ul id={styles.circleLi}>
@@ -8,13 +11,10 @@ const CardFront = () => {
         <li></li>
       </ul>
       <ul id={styles.cardNumber}>
-        <li>0000</li>
-        <li>0000</li>
-        <li>0000</li>
-        <li>0000</li>
+        <li>{number ? number : '0000 0000 0000 0000'}</li>
       </ul>
       <ul className={styles.cardName}>
-          <li>maicondlol</li>
+          <li>{user ? user : 'e.g. Jane Applessed'}</li>
           <li>MM/YY</li>
         </ul>
     </div>
