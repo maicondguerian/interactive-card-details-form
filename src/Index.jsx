@@ -1,7 +1,6 @@
 import { MyContext } from './contexts/MyContext'
 import { PageBackground } from './components/Background/PageBackground'
 import { ContentContainer } from './container/ContentContainer'
-import './Index.scss'
 import { Form } from './components/Form/Form'
 
 function App() {

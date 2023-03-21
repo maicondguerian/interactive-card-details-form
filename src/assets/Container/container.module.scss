@@ -1,0 +1,18 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+}
+
+.left {
+    width: 22%;
+    height: 100vh;
+    background-image: url('./../bg-main-desktop.png');
+    background-size: cover;
+}
+
+.right {
+    width: 70vw;
+    height: 100vh;
+}
