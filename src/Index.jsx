@@ -27,6 +27,9 @@ function App() {
   
 
   const handleMonth = (evento) => {
+    const value = evento.target.value
+    formattedValue = value.replace(/\D/g, '')
+    
     setMonth(evento.target.value)
   }
 
@@ -35,7 +38,13 @@ function App() {
   }
 
   const handleCvc = (evento) => {
-    setCvc(evento.target.value)
+    const value = evento.target.value
+    const formattedValue = value.replace(/\D/g, '')
+    if (formattedValue.length > 2) {
+      setCvc(value.slice(0,3))
+    } else {
+    setCvc(value)
+    }
   }
 
   return (
