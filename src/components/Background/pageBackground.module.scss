@@ -35,14 +35,14 @@ $imgHeight: 225px;
             grid-gap: 1em;
 
             li:first-child{
-                background-color: var(--white);
+                background-color: var(--white-font);
                 height: 50px;
                 width: 50px;
                 border-radius: 50%;
             }
 
             li:last-child{
-                border: solid 1.4px  var(--white);
+                border: solid 1.4px  var(--white-font);
                 height: 25px;
                 width: 25px;
                 border-radius: 50%;
@@ -61,7 +61,7 @@ $imgHeight: 225px;
                     font-size: 26px;
                     font-weight: 400;
                     letter-spacing: 0.1em;
-                    color:  var(--white);
+                    color:  var(--white-font);
                 }
             }
 
@@ -72,7 +72,7 @@ $imgHeight: 225px;
                 margin-top: 1rem;
 
                 li{
-                    color: var(--white);
+                    color: var(--white-font);
                     text-transform: uppercase;
                 }
             }
@@ -95,7 +95,7 @@ $imgHeight: 225px;
             justify-content:flex-end;
 
             span{
-                color: var(--white);
+                color: var(--white-font);
                 font-weight: 500;
                 position: absolute;
                 bottom: 46%;
