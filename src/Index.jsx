@@ -31,7 +31,7 @@ function App() {
   }
 
   const handleYear = (evento) => {
-    setUser(evento.target.value)
+    setYear(evento.target.value)
   }
 
   const handleCvc = (evento) => {
