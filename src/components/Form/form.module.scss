@@ -40,6 +40,19 @@
             padding: 1rem;
         }
 
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            /* display: none; <- Crashes Chrome on hover */
+            -webkit-appearance: none;
+            margin: 0;
+            /* <-- Apparently some margin are still there even though it's hidden */
+        }
+
+        input[type=number] {
+            -moz-appearance: textfield;
+            /* Firefox */
+        }
+
         .dateCvc {
 
             display: flex;
@@ -48,8 +61,8 @@
             margin-bottom: 1.5rem;
 
             .data {
-            width: 100%;
-                
+                width: 100%;
+
                 .dataDado {
                     display: flex;
                     flex-direction: row;
