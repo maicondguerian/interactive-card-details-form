@@ -12,7 +12,13 @@ function App() {
   const [ cvc, setCvc ] = useState('')
 
   const handleUser = (evento) => {
-    setUser(evento.target.value)
+    const value = evento.target.value
+    const formattedValue = value.replace(/\W/g, '').replace(/\d/g, '').replace(/_/g, '')
+    if (formattedValue > 20) {
+      setUser(formattedValue.slice(0, 20))
+    } else {
+      setUser(formattedValue)
+    }
   }
 
   const handleNumber = (evento) => {
