@@ -1,4 +1,9 @@
 .formWrapper{
     display: flex;
-    align-items: center;
-}
+    flex-direction: column;
+
+    ul:last-child{
+        display: flex;
+        list-style: none;
+    }
+}   
