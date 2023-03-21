@@ -9,6 +9,7 @@ function App() {
   const [ number, setNumber ] = useState('')
   const [ month, setMonth ] = useState('')
   const [ year, setYear ] = useState('')
+  const [ cvc, setCvc ] = useState('')
 
   const handleUser = (evento) => {
     setUser(evento.target.value)
@@ -26,8 +27,12 @@ function App() {
     setUser(evento.target.value)
   }
 
+  const handleCvc = (evento) => {
+    setCvc(evento.target.value)
+  }
+
   return (
-    <MyContext.Provider value={{ handleUser, user, number, handleNumber, month, setMonth, year, setYear }}>
+    <MyContext.Provider value={{ user, handleUser, number, handleNumber, month, handleMonth, year, handleYear, cvc, handleCvc }}>
       <ContentContainer>
         <PageBackground>
           <Form />

@@ -3,7 +3,7 @@ import { MyContext } from "../../contexts/MyContext";
 import styles from "./pageBackground.module.scss";
 
 const CardFront = () => {
-  const { user, number } = useContext(MyContext)
+  const { user, number, month, year } = useContext(MyContext)
   return (
     <div alt="cardFront" id={styles.cardFrontImg}>
       <ul id={styles.circleLi}>
@@ -15,15 +15,15 @@ const CardFront = () => {
       </ul>
       <ul className={styles.cardName}>
           <li>{user ? user : 'e.g. Jane Applessed'}</li>
-          <li>MM/YY</li>
+          <li>{month ? month : 'MM'}/{year ? year : 'YY'}</li>
         </ul>
     </div>
   )
-
 }
 const CardBackImg = () => {
+  const { cvc } = useContext(MyContext)
   return <div alt="cardFront" id={styles.cardBackImg}>
-    <span>CVC</span>
+    <span>{cvc ? cvc : 'CVC'}</span>
   </div>
 }
 
